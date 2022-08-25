@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 314126151}
   - component: {fileID: 314126155}
   m_Layer: 5
-  m_Name: Ui
+  m_Name: Ui-Assembly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,6 @@ GameObject:
   - component: {fileID: 1393511290}
   - component: {fileID: 1393511292}
   - component: {fileID: 1393511291}
-  - component: {fileID: 1393511293}
   m_Layer: 5
   m_Name: MoneyValue
   m_TagString: Untagged
@@ -731,66 +730,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393511289}
   m_CullTransparentMesh: 1
---- !u!114 &1393511293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393511289}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643da09f8da2a24499e2e619773851a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walletManagerScriptableObject: {fileID: 11400000, guid: 6772d159d63e4634a9a83cff66ee03fd, type: 2}
-  moneyText: {fileID: 1393511291}
---- !u!1 &1409006686
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1409006687}
-  - component: {fileID: 1409006688}
-  m_Layer: 0
-  m_Name: Wallet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1409006687
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409006686}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1409006688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409006686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643da09f8da2a24499e2e619773851a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walletManagerScriptableObject: {fileID: 0}
-  moneyText: {fileID: 0}
 --- !u!1 &1411407293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,3 +1278,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036754289}
   m_CullTransparentMesh: 1
+--- !u!1 &2061350662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2061350664}
+  - component: {fileID: 2061350663}
+  m_Layer: 0
+  m_Name: Wallet-Assembly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2061350663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061350662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643da09f8da2a24499e2e619773851a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walletManagerScriptableObject: {fileID: 11400000, guid: 6772d159d63e4634a9a83cff66ee03fd, type: 2}
+  moneyText: {fileID: 1393511291}
+--- !u!4 &2061350664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061350662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
